@@ -1,6 +1,6 @@
 import os
 import environ
-import dj_database_url
+# import dj_database_url
 from pathlib import Path
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -11,18 +11,18 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/4.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-# SECRET_KEY = 'django-insecure-i(4vcho=vnis5d$th*1hk1nichxa=zhu1g0^q)rtrb6x$%7^kt'
-SECRET_KEY = os.environ.get('SECRET_KEY', default='django-insecure-i(4vcho=vnis5d$th*1hk1nichxa=zhu1g0^q)rtrb6x$%7^kt')
+SECRET_KEY = 'django-insecure-i(4vcho=vnis5d$th*1hk1nichxa=zhu1g0^q)rtrb6x$%7^kt'
+# SECRET_KEY = os.environ.get('SECRET_KEY', default='django-insecure-i(4vcho=vnis5d$th*1hk1nichxa=zhu1g0^q)rtrb6x$%7^kt')
 # SECURITY WARNING: don't run with debug turned on in production!
-# DEBUG = True
-DEBUG = 'RENDER' not in os.environ
+DEBUG = True
+# DEBUG = 'RENDER' not in os.environ
 
 ALLOWED_HOSTS = []
 
 
-RENDER_EXTERNAL_HOSTNAME = os.environ.get('RENDER_EXTERNAL_HOSTNAME')
-if RENDER_EXTERNAL_HOSTNAME:
-    ALLOWED_HOSTS.append(RENDER_EXTERNAL_HOSTNAME)
+# RENDER_EXTERNAL_HOSTNAME = os.environ.get('RENDER_EXTERNAL_HOSTNAME')
+# if RENDER_EXTERNAL_HOSTNAME:
+#     ALLOWED_HOSTS.append(RENDER_EXTERNAL_HOSTNAME)
 
 
 # Application definition
@@ -36,7 +36,6 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'stadium.apps.StadiumConfig',
     'bootstrap5',
-    # 'leaflet',
 ]
 
 MIDDLEWARE = [
@@ -47,7 +46,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
-    'whitenoise.middleware.WhiteNoiseMiddleware', # for render
+    # 'whitenoise.middleware.WhiteNoiseMiddleware', # for render
 ]
 
 ROOT_URLCONF = 'panda.urls'
@@ -84,26 +83,26 @@ WSGI_APPLICATION = 'panda.wsgi.application'
 env = environ.Env()
 env.read_env(os.path.join(BASE_DIR, '.env'))
 
-# SECRET_KEY = env('SECRET_KEY')
-
-# DATABASES = {
-#     'default': {
-#         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-#         'NAME': env('DB_NAME'),
-#         'USER': env('DB_USER'),
-#         'PASSWORD': env('DB_PW'),
-#         'HOST': env('DB_HOST'),
-#         'PORT': env('DB_PORT'),
-#     }
-# }
+SECRET_KEY = env('SECRET_KEY')
 
 DATABASES = {
-    'default': dj_database_url.config(
-        # Feel free to alter this value to suit your needs.
-        default='postgresql://postgres:postgres@localhost:5432/mysite',
-        conn_max_age=600
-    )
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': env('DB_NAME'),
+        'USER': env('DB_USER'),
+        'PASSWORD': env('DB_PW'),
+        'HOST': env('DB_HOST'),
+        'PORT': env('DB_PORT'),
+    }
 }
+
+# DATABASES = {
+#     'default': dj_database_url.config(
+#         # Feel free to alter this value to suit your needs.
+#         default='postgresql://postgres:postgres@localhost:5432/mysite',
+#         conn_max_age=600
+#     )
+# }
 
 
 # Password validation
@@ -143,14 +142,14 @@ USE_TZ = True
 STATIC_URL = '/static/'
 
 # Following settings only make sense on production and may break development environments.
-if not DEBUG:
-    # Tell Django to copy statics to the `staticfiles` directory
-    # in your application directory on Render.
-    STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+# if not DEBUG:
+#     # Tell Django to copy statics to the `staticfiles` directory
+#     # in your application directory on Render.
+#     STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
-    # Turn on WhiteNoise storage backend that takes care of compressing static files
-    # and creating unique names for each version so they can safely be cached forever.
-    STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
+#     # Turn on WhiteNoise storage backend that takes care of compressing static files
+#     # and creating unique names for each version so they can safely be cached forever.
+#     STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
 
 STATICFILES_DIRS = (
