@@ -1,0 +1,663 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_8cc817638d2fe0ed73e879461306de5b {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_8cc817638d2fe0ed73e879461306de5b" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_8cc817638d2fe0ed73e879461306de5b = L.map(
+                "map_8cc817638d2fe0ed73e879461306de5b",
+                {
+                    center: [36.0, 140.0],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 5,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_f4c43a51b81ac661c948ef164d488c64 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca target=\"_blank\" href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_8cc817638d2fe0ed73e879461306de5b);
+        
+    
+            var marker_1fd4eb7e3727e02b87b31a1f761b1fe6 = L.marker(
+                [38.31914725, 140.88183495],
+                {}
+            ).addTo(map_8cc817638d2fe0ed73e879461306de5b);
+        
+    
+            var icon_4d7410e043482d28963c766f00d4ab44 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_1fd4eb7e3727e02b87b31a1f761b1fe6.setIcon(icon_4d7410e043482d28963c766f00d4ab44);
+        
+    
+        var popup_584101c10e9c32b419e070e139851073 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d94d90131d97a7c2eb9111de5936b3e7 = $(`<div id="html_d94d90131d97a7c2eb9111de5936b3e7" style="width: 100.0%; height: 100.0%;">ユアテックスタジアム仙台</div>`)[0];
+                popup_584101c10e9c32b419e070e139851073.setContent(html_d94d90131d97a7c2eb9111de5936b3e7);
+            
+        
+
+        marker_1fd4eb7e3727e02b87b31a1f761b1fe6.bindPopup(popup_584101c10e9c32b419e070e139851073)
+        ;
+
+        
+    
+    
+            var marker_f20c5de56e58e7a64fe331dbed493b14 = L.marker(
+                [39.721510699999996, 140.0957691351444],
+                {}
+            ).addTo(map_8cc817638d2fe0ed73e879461306de5b);
+        
+    
+            var icon_48312b16195d0da238ac42978a1b63b1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_f20c5de56e58e7a64fe331dbed493b14.setIcon(icon_48312b16195d0da238ac42978a1b63b1);
+        
+    
+        var popup_d6882f1225fe668c21352a853bbbbdbe = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a34fd311b9806ec080ef1fdd0ae68c3a = $(`<div id="html_a34fd311b9806ec080ef1fdd0ae68c3a" style="width: 100.0%; height: 100.0%;">ソユースタジアム</div>`)[0];
+                popup_d6882f1225fe668c21352a853bbbbdbe.setContent(html_a34fd311b9806ec080ef1fdd0ae68c3a);
+            
+        
+
+        marker_f20c5de56e58e7a64fe331dbed493b14.bindPopup(popup_d6882f1225fe668c21352a853bbbbdbe)
+        ;
+
+        
+    
+    
+            var marker_9ff4d4e4e742d8d04bd54cb0e7f894c6 = L.marker(
+                [38.335575649999996, 140.37744284078218],
+                {}
+            ).addTo(map_8cc817638d2fe0ed73e879461306de5b);
+        
+    
+            var icon_5321bc543aeb0e36d735f6eb40e22ead = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_9ff4d4e4e742d8d04bd54cb0e7f894c6.setIcon(icon_5321bc543aeb0e36d735f6eb40e22ead);
+        
+    
+        var popup_5b157d9d399bca84413c2bc8965f17b5 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d70596af187a08184e42b034893b10f7 = $(`<div id="html_d70596af187a08184e42b034893b10f7" style="width: 100.0%; height: 100.0%;">ＮＤソフトスタジアム山形</div>`)[0];
+                popup_5b157d9d399bca84413c2bc8965f17b5.setContent(html_d70596af187a08184e42b034893b10f7);
+            
+        
+
+        marker_9ff4d4e4e742d8d04bd54cb0e7f894c6.bindPopup(popup_5b157d9d399bca84413c2bc8965f17b5)
+        ;
+
+        
+    
+    
+            var marker_afe4552516b8a43d78ecd0282bc491f1 = L.marker(
+                [37.017245349999996, 140.86441207481704],
+                {}
+            ).addTo(map_8cc817638d2fe0ed73e879461306de5b);
+        
+    
+            var icon_07beee98c0957ade2897d14be9cf9942 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_afe4552516b8a43d78ecd0282bc491f1.setIcon(icon_07beee98c0957ade2897d14be9cf9942);
+        
+    
+        var popup_f3b5c38cb7b08358246ec7c58269af43 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_299333bf149add13aa290c9e3e5fa684 = $(`<div id="html_299333bf149add13aa290c9e3e5fa684" style="width: 100.0%; height: 100.0%;">いわきグリーンフィールド</div>`)[0];
+                popup_f3b5c38cb7b08358246ec7c58269af43.setContent(html_299333bf149add13aa290c9e3e5fa684);
+            
+        
+
+        marker_afe4552516b8a43d78ecd0282bc491f1.bindPopup(popup_f3b5c38cb7b08358246ec7c58269af43)
+        ;
+
+        
+    
+    
+            var marker_57a593367f1db39efd932192962fe6c2 = L.marker(
+                [36.345389299999994, 140.41224953652863],
+                {}
+            ).addTo(map_8cc817638d2fe0ed73e879461306de5b);
+        
+    
+            var icon_22130b0fa2ca8d00faae84137364eaec = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_57a593367f1db39efd932192962fe6c2.setIcon(icon_22130b0fa2ca8d00faae84137364eaec);
+        
+    
+        var popup_990d800698d773163e1af422cfbe43a2 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b58993adeeed09a6ea7fb5545f9be4b9 = $(`<div id="html_b58993adeeed09a6ea7fb5545f9be4b9" style="width: 100.0%; height: 100.0%;">ケーズデンキスタジアム水戸</div>`)[0];
+                popup_990d800698d773163e1af422cfbe43a2.setContent(html_b58993adeeed09a6ea7fb5545f9be4b9);
+            
+        
+
+        marker_57a593367f1db39efd932192962fe6c2.bindPopup(popup_990d800698d773163e1af422cfbe43a2)
+        ;
+
+        
+    
+    
+            var marker_f9a9bc5ab7b72bbb5a19c00999e97ba4 = L.marker(
+                [36.509945272331336, 139.8576862972092],
+                {}
+            ).addTo(map_8cc817638d2fe0ed73e879461306de5b);
+        
+    
+            var icon_d6fa1c7b282b6414c08b40555f7b398d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_f9a9bc5ab7b72bbb5a19c00999e97ba4.setIcon(icon_d6fa1c7b282b6414c08b40555f7b398d);
+        
+    
+        var popup_0a32ebb14a6bf2820ab0b61688751fa7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5b241f6c2d4404e8fa90b476a03cb432 = $(`<div id="html_5b241f6c2d4404e8fa90b476a03cb432" style="width: 100.0%; height: 100.0%;">カンセキスタジアムとちぎ</div>`)[0];
+                popup_0a32ebb14a6bf2820ab0b61688751fa7.setContent(html_5b241f6c2d4404e8fa90b476a03cb432);
+            
+        
+
+        marker_f9a9bc5ab7b72bbb5a19c00999e97ba4.bindPopup(popup_0a32ebb14a6bf2820ab0b61688751fa7)
+        ;
+
+        
+    
+    
+            var marker_479421bead1189e82d1aa9cfe6c45db2 = L.marker(
+                [36.41160175, 139.0531972589248],
+                {}
+            ).addTo(map_8cc817638d2fe0ed73e879461306de5b);
+        
+    
+            var icon_77c179686cd853aebd5e2fa1ef958f9c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_479421bead1189e82d1aa9cfe6c45db2.setIcon(icon_77c179686cd853aebd5e2fa1ef958f9c);
+        
+    
+        var popup_0c96a3cbc7b0cd4852b2ccf81ede2342 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_488df73c7ce5b3a43d41fa139d958faf = $(`<div id="html_488df73c7ce5b3a43d41fa139d958faf" style="width: 100.0%; height: 100.0%;">正田醤油スタジアム群馬</div>`)[0];
+                popup_0c96a3cbc7b0cd4852b2ccf81ede2342.setContent(html_488df73c7ce5b3a43d41fa139d958faf);
+            
+        
+
+        marker_479421bead1189e82d1aa9cfe6c45db2.bindPopup(popup_0c96a3cbc7b0cd4852b2ccf81ede2342)
+        ;
+
+        
+    
+    
+            var marker_4386a8388a0e0898ac3402f4d8d27356 = L.marker(
+                [35.91625305, 139.6334514171515],
+                {}
+            ).addTo(map_8cc817638d2fe0ed73e879461306de5b);
+        
+    
+            var icon_87639773ec4d9f6f38d15ac04dda6271 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_4386a8388a0e0898ac3402f4d8d27356.setIcon(icon_87639773ec4d9f6f38d15ac04dda6271);
+        
+    
+        var popup_0ec3495dbac11a3631ac45a686ee5e57 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ff5693a68ec8540dc24b9ea0d238b822 = $(`<div id="html_ff5693a68ec8540dc24b9ea0d238b822" style="width: 100.0%; height: 100.0%;">ＮＡＣＫ５スタジアム大宮</div>`)[0];
+                popup_0ec3495dbac11a3631ac45a686ee5e57.setContent(html_ff5693a68ec8540dc24b9ea0d238b822);
+            
+        
+
+        marker_4386a8388a0e0898ac3402f4d8d27356.bindPopup(popup_0ec3495dbac11a3631ac45a686ee5e57)
+        ;
+
+        
+    
+    
+            var marker_42b00cb5c02c55f0816c10197857a5ba = L.marker(
+                [35.577544849999995, 140.12215979931813],
+                {}
+            ).addTo(map_8cc817638d2fe0ed73e879461306de5b);
+        
+    
+            var icon_02d5711cb82a8291e00ecf0a15ec15b0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_42b00cb5c02c55f0816c10197857a5ba.setIcon(icon_02d5711cb82a8291e00ecf0a15ec15b0);
+        
+    
+        var popup_26aafcd8c1f0ee86e8b38f91d7880478 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5b18f54d0d247a6b45c870c9e1a86d96 = $(`<div id="html_5b18f54d0d247a6b45c870c9e1a86d96" style="width: 100.0%; height: 100.0%;">フクダ電子アリーナ</div>`)[0];
+                popup_26aafcd8c1f0ee86e8b38f91d7880478.setContent(html_5b18f54d0d247a6b45c870c9e1a86d96);
+            
+        
+
+        marker_42b00cb5c02c55f0816c10197857a5ba.bindPopup(popup_26aafcd8c1f0ee86e8b38f91d7880478)
+        ;
+
+        
+    
+    
+            var marker_0bb447b373cf123b2384fb750ca9e3d1 = L.marker(
+                [35.66418645, 139.52707517816015],
+                {}
+            ).addTo(map_8cc817638d2fe0ed73e879461306de5b);
+        
+    
+            var icon_cfdec9f6600ecbdf6afb71d4d48298b6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_0bb447b373cf123b2384fb750ca9e3d1.setIcon(icon_cfdec9f6600ecbdf6afb71d4d48298b6);
+        
+    
+        var popup_7c4c002a244271e3315cf46a00a18077 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_54d7ff5357d6a61b4bded15e27078f1c = $(`<div id="html_54d7ff5357d6a61b4bded15e27078f1c" style="width: 100.0%; height: 100.0%;">味の素スタジアム</div>`)[0];
+                popup_7c4c002a244271e3315cf46a00a18077.setContent(html_54d7ff5357d6a61b4bded15e27078f1c);
+            
+        
+
+        marker_0bb447b373cf123b2384fb750ca9e3d1.bindPopup(popup_7c4c002a244271e3315cf46a00a18077)
+        ;
+
+        
+    
+    
+            var marker_4fa0d6b1c5bda86946c1ca8fda40cd95 = L.marker(
+                [35.592553, 139.43884776945197],
+                {}
+            ).addTo(map_8cc817638d2fe0ed73e879461306de5b);
+        
+    
+            var icon_f65ad5b083d910b400256bd54d7c65a8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_4fa0d6b1c5bda86946c1ca8fda40cd95.setIcon(icon_f65ad5b083d910b400256bd54d7c65a8);
+        
+    
+        var popup_d0570e31c1bf2a2687a04e4dedc30063 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_259a61d54306e1cf51810b61af9c7a4d = $(`<div id="html_259a61d54306e1cf51810b61af9c7a4d" style="width: 100.0%; height: 100.0%;">町田ＧＩＯＮスタジアム</div>`)[0];
+                popup_d0570e31c1bf2a2687a04e4dedc30063.setContent(html_259a61d54306e1cf51810b61af9c7a4d);
+            
+        
+
+        marker_4fa0d6b1c5bda86946c1ca8fda40cd95.bindPopup(popup_d0570e31c1bf2a2687a04e4dedc30063)
+        ;
+
+        
+    
+    
+            var marker_421241a25f3092bf1db203927489fd21 = L.marker(
+                [35.6818468, 138.557681],
+                {}
+            ).addTo(map_8cc817638d2fe0ed73e879461306de5b);
+        
+    
+            var icon_50aa711ac107eb1ee4d00ae4030a309a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_421241a25f3092bf1db203927489fd21.setIcon(icon_50aa711ac107eb1ee4d00ae4030a309a);
+        
+    
+        var popup_fc3f75ae3f38c7752cd944799fd3a7c5 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_07b3227e08fc7e636ce094a14b909351 = $(`<div id="html_07b3227e08fc7e636ce094a14b909351" style="width: 100.0%; height: 100.0%;">ＪＩＴ　リサイクルインク　スタジアム</div>`)[0];
+                popup_fc3f75ae3f38c7752cd944799fd3a7c5.setContent(html_07b3227e08fc7e636ce094a14b909351);
+            
+        
+
+        marker_421241a25f3092bf1db203927489fd21.bindPopup(popup_fc3f75ae3f38c7752cd944799fd3a7c5)
+        ;
+
+        
+    
+    
+            var marker_041f936d4f3acadce99bbac72948f7e8 = L.marker(
+                [36.57646752008643, 136.60595749721168],
+                {}
+            ).addTo(map_8cc817638d2fe0ed73e879461306de5b);
+        
+    
+            var icon_b87c866a12d174f61f3a85accecc9586 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_041f936d4f3acadce99bbac72948f7e8.setIcon(icon_b87c866a12d174f61f3a85accecc9586);
+        
+    
+        var popup_4e84e372a0576f5dd40f3da5d2ee52f0 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d1bc752077142ff941deb1bb4967402e = $(`<div id="html_d1bc752077142ff941deb1bb4967402e" style="width: 100.0%; height: 100.0%;">石川県西部緑地公園陸上競技場</div>`)[0];
+                popup_4e84e372a0576f5dd40f3da5d2ee52f0.setContent(html_d1bc752077142ff941deb1bb4967402e);
+            
+        
+
+        marker_041f936d4f3acadce99bbac72948f7e8.bindPopup(popup_4e84e372a0576f5dd40f3da5d2ee52f0)
+        ;
+
+        
+    
+    
+            var marker_9a0f49208befc57f9d681f6fc2492068 = L.marker(
+                [34.984701799999996, 138.4812509609019],
+                {}
+            ).addTo(map_8cc817638d2fe0ed73e879461306de5b);
+        
+    
+            var icon_0a8d99bcfdb8690507d9b17c0c96968d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_9a0f49208befc57f9d681f6fc2492068.setIcon(icon_0a8d99bcfdb8690507d9b17c0c96968d);
+        
+    
+        var popup_f6e9de4509c6f168c5a3846e608bfa59 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_acfb67ed7f50bb00c05e6a3bfc1b75d1 = $(`<div id="html_acfb67ed7f50bb00c05e6a3bfc1b75d1" style="width: 100.0%; height: 100.0%;">ＩＡＩスタジアム日本平</div>`)[0];
+                popup_f6e9de4509c6f168c5a3846e608bfa59.setContent(html_acfb67ed7f50bb00c05e6a3bfc1b75d1);
+            
+        
+
+        marker_9a0f49208befc57f9d681f6fc2492068.bindPopup(popup_f6e9de4509c6f168c5a3846e608bfa59)
+        ;
+
+        
+    
+    
+            var marker_0f62fab86b3cc368cdb30a5a94845219 = L.marker(
+                [34.7251498, 137.8751465],
+                {}
+            ).addTo(map_8cc817638d2fe0ed73e879461306de5b);
+        
+    
+            var icon_a4d3e78a686d432c2f37464252e8ce4a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_0f62fab86b3cc368cdb30a5a94845219.setIcon(icon_a4d3e78a686d432c2f37464252e8ce4a);
+        
+    
+        var popup_58c12e58ce46738ed73135d3c9bcbd40 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c6065bd3b7c48df0ce9a8aa2e6eebf5c = $(`<div id="html_c6065bd3b7c48df0ce9a8aa2e6eebf5c" style="width: 100.0%; height: 100.0%;">ヤマハスタジアム（磐田）</div>`)[0];
+                popup_58c12e58ce46738ed73135d3c9bcbd40.setContent(html_c6065bd3b7c48df0ce9a8aa2e6eebf5c);
+            
+        
+
+        marker_0f62fab86b3cc368cdb30a5a94845219.bindPopup(popup_58c12e58ce46738ed73135d3c9bcbd40)
+        ;
+
+        
+    
+    
+            var marker_d8f0a0b8564c75b57b6b47f2a1513f44 = L.marker(
+                [34.88159005, 138.2328944582272],
+                {}
+            ).addTo(map_8cc817638d2fe0ed73e879461306de5b);
+        
+    
+            var icon_f0e2fd9f2b27b52c83a954ab968f7de5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_d8f0a0b8564c75b57b6b47f2a1513f44.setIcon(icon_f0e2fd9f2b27b52c83a954ab968f7de5);
+        
+    
+        var popup_9eaeb46767f429c22bc2be004f8310f5 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5c6ab0f984c6b2867a21665e911cfb30 = $(`<div id="html_5c6ab0f984c6b2867a21665e911cfb30" style="width: 100.0%; height: 100.0%;">藤枝総合運動公園サッカー場</div>`)[0];
+                popup_9eaeb46767f429c22bc2be004f8310f5.setContent(html_5c6ab0f984c6b2867a21665e911cfb30);
+            
+        
+
+        marker_d8f0a0b8564c75b57b6b47f2a1513f44.bindPopup(popup_9eaeb46767f429c22bc2be004f8310f5)
+        ;
+
+        
+    
+    
+            var marker_6c566d88b3e485b6d9b1a6679f779aeb = L.marker(
+                [34.6807354, 133.91953468839893],
+                {}
+            ).addTo(map_8cc817638d2fe0ed73e879461306de5b);
+        
+    
+            var icon_d27432fb0c81ecf1357e4887dddcc8f4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_6c566d88b3e485b6d9b1a6679f779aeb.setIcon(icon_d27432fb0c81ecf1357e4887dddcc8f4);
+        
+    
+        var popup_de83d3733d5a071eea4e1e3df97c62a2 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0313859dd831130689acc6256442ca45 = $(`<div id="html_0313859dd831130689acc6256442ca45" style="width: 100.0%; height: 100.0%;">シティライトスタジアム</div>`)[0];
+                popup_de83d3733d5a071eea4e1e3df97c62a2.setContent(html_0313859dd831130689acc6256442ca45);
+            
+        
+
+        marker_6c566d88b3e485b6d9b1a6679f779aeb.bindPopup(popup_de83d3733d5a071eea4e1e3df97c62a2)
+        ;
+
+        
+    
+    
+            var marker_e81fb9f488525af178b8f584c3e13247 = L.marker(
+                [34.15808085113908, 131.4398384971317],
+                {}
+            ).addTo(map_8cc817638d2fe0ed73e879461306de5b);
+        
+    
+            var icon_45caf16f603742de92501a3923e3f88d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_e81fb9f488525af178b8f584c3e13247.setIcon(icon_45caf16f603742de92501a3923e3f88d);
+        
+    
+        var popup_5b7cee3d2ec0dfabdd3763dc355eec4b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1258a44e5caa3252896ab928068a6a52 = $(`<div id="html_1258a44e5caa3252896ab928068a6a52" style="width: 100.0%; height: 100.0%;">維新みらいふスタジアム</div>`)[0];
+                popup_5b7cee3d2ec0dfabdd3763dc355eec4b.setContent(html_1258a44e5caa3252896ab928068a6a52);
+            
+        
+
+        marker_e81fb9f488525af178b8f584c3e13247.bindPopup(popup_5b7cee3d2ec0dfabdd3763dc355eec4b)
+        ;
+
+        
+    
+    
+            var marker_02ccd7d7d45bd941dd9b9703706c07a4 = L.marker(
+                [34.16789401913644, 134.61525389713196],
+                {}
+            ).addTo(map_8cc817638d2fe0ed73e879461306de5b);
+        
+    
+            var icon_d8ef61031759e1b0f4b071f6562480c9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_02ccd7d7d45bd941dd9b9703706c07a4.setIcon(icon_d8ef61031759e1b0f4b071f6562480c9);
+        
+    
+        var popup_66ff26d058e5313bf28967bd103f4181 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_eafd1f51fb80ab9bfc7cb35a2c67a644 = $(`<div id="html_eafd1f51fb80ab9bfc7cb35a2c67a644" style="width: 100.0%; height: 100.0%;">鳴門・大塚スポーツパーク ポカリスエットスタジアム</div>`)[0];
+                popup_66ff26d058e5313bf28967bd103f4181.setContent(html_eafd1f51fb80ab9bfc7cb35a2c67a644);
+            
+        
+
+        marker_02ccd7d7d45bd941dd9b9703706c07a4.bindPopup(popup_66ff26d058e5313bf28967bd103f4181)
+        ;
+
+        
+    
+    
+            var marker_38ce5eee890dd3a407cad53cdc932651 = L.marker(
+                [32.838529550000004, 130.03940658375942],
+                {}
+            ).addTo(map_8cc817638d2fe0ed73e879461306de5b);
+        
+    
+            var icon_bbc7df6fb4f91e9e31d8632788298a22 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_38ce5eee890dd3a407cad53cdc932651.setIcon(icon_bbc7df6fb4f91e9e31d8632788298a22);
+        
+    
+        var popup_7a4e670396a04351225ce659034cdba9 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3a28e9c29198a06da24d7fb601ac4b66 = $(`<div id="html_3a28e9c29198a06da24d7fb601ac4b66" style="width: 100.0%; height: 100.0%;">トランスコスモススタジアム長崎</div>`)[0];
+                popup_7a4e670396a04351225ce659034cdba9.setContent(html_3a28e9c29198a06da24d7fb601ac4b66);
+            
+        
+
+        marker_38ce5eee890dd3a407cad53cdc932651.bindPopup(popup_7a4e670396a04351225ce659034cdba9)
+        ;
+
+        
+    
+    
+            var marker_33f53c46f1d0cef440d6e39cc302576a = L.marker(
+                [32.836909399999996, 130.8001381033166],
+                {}
+            ).addTo(map_8cc817638d2fe0ed73e879461306de5b);
+        
+    
+            var icon_83c27837a9711281be8db5e61f94983c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_33f53c46f1d0cef440d6e39cc302576a.setIcon(icon_83c27837a9711281be8db5e61f94983c);
+        
+    
+        var popup_a2a98b93e3f707681f1abbc7f65a3089 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_28c5d5b44921137bb99ed40e4084473e = $(`<div id="html_28c5d5b44921137bb99ed40e4084473e" style="width: 100.0%; height: 100.0%;">えがお健康スタジアム</div>`)[0];
+                popup_a2a98b93e3f707681f1abbc7f65a3089.setContent(html_28c5d5b44921137bb99ed40e4084473e);
+            
+        
+
+        marker_33f53c46f1d0cef440d6e39cc302576a.bindPopup(popup_a2a98b93e3f707681f1abbc7f65a3089)
+        ;
+
+        
+    
+    
+            var marker_1f7e4d809ece714791e8582ac706f2e0 = L.marker(
+                [33.2007159, 131.65749200362785],
+                {}
+            ).addTo(map_8cc817638d2fe0ed73e879461306de5b);
+        
+    
+            var icon_790a9d464b72e2a8c1f2ab0ed230c8eb = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_1f7e4d809ece714791e8582ac706f2e0.setIcon(icon_790a9d464b72e2a8c1f2ab0ed230c8eb);
+        
+    
+        var popup_51817cadf83bdbfc97521f44271b33ec = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_de5e0eaa1ce6f0e6fab2724792eb759a = $(`<div id="html_de5e0eaa1ce6f0e6fab2724792eb759a" style="width: 100.0%; height: 100.0%;">レゾナックドーム大分</div>`)[0];
+                popup_51817cadf83bdbfc97521f44271b33ec.setContent(html_de5e0eaa1ce6f0e6fab2724792eb759a);
+            
+        
+
+        marker_1f7e4d809ece714791e8582ac706f2e0.bindPopup(popup_51817cadf83bdbfc97521f44271b33ec)
+        ;
+
+        
+    
+</script>
+</html>

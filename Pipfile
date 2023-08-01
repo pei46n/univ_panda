@@ -1,0 +1,26 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+django = "*"
+psycopg2-binary = "*"
+django-bootstrap-v5 = "*"
+googlemaps = "*"
+django-environ = "*"
+pygeocoder = "*"
+pillow = "*"
+pandas = "*"
+ipykernel = "*"
+django-leaflet = "*"
+folium = "*"
+dj-database-url = "*"
+whitenoise = "*"
+gunicorn = "*"
+
+[dev-packages]
+
+[requires]
+python_version = "3.9"
+python_full_version = "3.9.11"

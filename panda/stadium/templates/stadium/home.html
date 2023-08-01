@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+{% block content %}
+
+    <div class="text-center pt-4 pb-1" style="background-color: #B1D5D1;">
+        <h2 style="font-family: fantasy; font-size: 45px;">StadiumMap</h2>
+    </div>
+
+    <div class="container my-5">
+        <p>
+            本サイトは，データサイエンス・ビジネスデザイン特論において作成したものである．<br>
+            日本サッカーのJリーグに参画しているチームそれぞれのホームスタジアムについてまとめたサービスである．
+            それぞれのスタジアムの情報及び，そのスタジアムでのゲーム情報及びイベント情報等をまとめる．
+            スタジアムの位置情報及び住所から地図を表示し，またそれらをまとめた地図もOpen Street Map を用いて表示した．<br>
+
+            試合情報及びイベント情報の動的更新については，まだ実装は終わっていない．
+            今後は，試合情報及びイベント情報，またその他スタジアムに関わる何らかの情報を動的に更新し，
+            試合結果やサポータ同士でコミュニケーションが取れる簡易SNS及び掲示板等の実装も出来たら有意義なサービスにできるのではないかと思う．
+        </p>
+        <div class="container my-2 p-3">
+            <div id="home_map">
+                {% load static %}
+                <script src="{% static 'home_map.js' %}"></script>
+            </div>
+        </div>
+
+        <a class="btn btn-outline-primary" href="{% url 'stadium:list' %}">Stadium List</a>
+    </div>
+
+{% endblock %}
